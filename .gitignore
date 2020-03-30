@@ -129,10 +129,4 @@ fabric.properties
 .idea/caches/build_file_checksums.ser
 
 dist/
-dist/index.html
-src/sass/_about.sass
-src/sass/_common.sass
-src/sass/_font-style.sass
-src/sass/_header.sass
-src/sass/_mediaQueries.sass
-src/sass/_slider.sass
+

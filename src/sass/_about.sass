@@ -1,0 +1,92 @@
+
+.about
+    margin: auto
+
+
+.about__description-wrapper
+    width: 670px
+    align-content: flex-end
+
+    @include responsive(desktop)
+        width: 50%
+    @include responsive(tablet)
+        width: 90%
+
+.about__description-item
+    padding-bottom: 10px
+
+.about__description-image
+    display: block
+    max-width: 100%
+    height: auto
+
+.about__image_left
+    margin-left: -70px
+
+.about__complect-wrapper
+    display: flex
+    justify-content: center
+
+
+    &::before
+        content: ""
+        position: absolute
+        //left: 500px
+        width: 940px
+        height: 186px
+        background: #F4F4F4
+        border-radius: 700px
+        z-index: -1
+
+        @include responsive(desktop)
+            left: 20%
+            width: 78%
+        @include responsive(tablet)
+            left: -20%
+            width: 100%
+
+.about__complect-text
+    width: 500px
+    height: 210px
+    padding-top: 10px
+    z-index: 1
+    @include responsive(desktop)
+        width: 340px
+    @include responsive(tablet)
+        width: 340px
+    @include responsive(phone)
+        width: 320px
+
+
+.about__complect-title
+    display: flex
+    font-family: Montserrat, sans-serif
+    font-style: normal
+    font-weight: bold
+    font-size: 30px
+    line-height: 40px
+    text-transform: uppercase
+    color: #FF7F08
+    @include responsive(desktop)
+        font-size: 133.33%
+//10px = 1rem; 10/30*100%=33.33%
+
+.about__complect-description
+    display: flex
+    font-family: Montserrat, sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: 20px
+    line-height: 30px
+    color: #000000
+    @include responsive(desktop)
+        font-size: 17px
+
+.about__complect-date
+    padding-top: 30px
+    font-family: Montserrat, sans-serif
+    font-style: normal
+    font-weight: 500
+    font-size: 20px
+    line-height: 55px
+    color: #9F9F9F

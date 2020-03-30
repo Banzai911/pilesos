@@ -1,0 +1,186 @@
+$blackColor: #black
+.header
+    background: #FF7F08
+    display: flex
+    align-items: center
+
+.main-menu
+    width: 100%
+    display: flex
+    padding: 0 50px 0 50px
+
+
+.menu-wrapper
+    list-style: none
+    display: flex
+    margin: 20px 0 5px 0
+    @include responsive(tablet)
+        flex-direction: column
+
+.menu__item
+    display: flex
+    align-items: center
+    height: 50px
+    border-left: 1px $blackColor solid
+    padding: 0 1.3em 0 1.3em
+    text-align: center
+
+.menu__item-link
+    width: 140px
+    text-decoration: none
+    color: #FFFFFF
+
+.subheader
+    display: flex
+    margin: 30px 0 25px 0
+    justify-content: space-between
+    @include responsive(phone)
+        flex-direction: column
+        align-items: center
+
+.subheader__item
+    @include responsive(phone)
+
+    &:not(:first-child)
+        margin-top: 10px
+
+.subheader__logo-wrapper
+    display: flex
+    align-items: center
+    margin-left: 20px
+
+.subheader__logo
+    margin-right: 10px
+    @include responsive(phone)
+        margin: auto
+
+.subheader__description
+    display: flex
+    width: 250px
+    padding: 5px 0 5px 10px
+    color: #FFFFFF
+    border-left: 1px #FFFFFF solid
+    align-items: center
+    @include responsive(phone)
+        margin: auto
+
+.subheader__logo-payment
+    display: flex
+    align-items: center
+    margin-left: 30px
+    @include responsive(tablet)
+        margin-left: 0
+
+.subheader__contact
+    width: 300px
+    align-items: center
+    @include responsive(tablet)
+        width: 200px
+
+.contact__phone-link
+    text-decoration: none
+    color: #547AB7
+    font-size: 20px
+    cursor: pointer
+
+    &:hover
+        border-bottom: 2px #547AB7 solid
+        margin: -1px
+
+
+.contact__phone-title
+    color: #FFFFFF
+    font-size: 14px
+    padding: 5px 0
+
+#dropdown-menu
+    display: none
+    @include responsive(tablet)
+        display: block
+@include responsive(tablet)
+
+    input + label
+        position: fixed
+        top: 20px
+        right: 20px
+        width: 15px
+        height: 20px
+        z-index: 5
+        //@include responsive(phone)
+        //    z-index: 5
+        span
+
+            position: absolute
+            width: 100%
+            height: 2px
+            top: 50%
+            margin-top: -1px
+            display: block
+            background: #F4F4F4
+            transition: .5s
+
+        span:first-child
+                top: 3px
+
+        span:last-child
+                top: 16px
+
+    label:hover
+        cursor: pointer
+
+    input:checked + label
+        span
+            opacity: 0
+            top: 50%
+
+        span:first-child
+            opacity: 1
+            transform: rotate(405deg)
+
+        span:last-child
+            opacity: 1
+            transform: rotate(-405deg)
+
+    input ~ nav
+        background: #FF7F08
+        position: fixed
+        top: 0
+        left: 0
+        width: 100%
+        height: 40px
+        z-index: 3
+        transition: .5s
+        transition-delay: .5s
+        overflow: hidden
+
+        > ul
+            display: flex
+            flex-flow: column
+
+            > li
+                opacity: 0
+                transition: .5s
+                transition-delay: 0s
+
+                > a
+                    //text-decoration: none
+                    //text-transform: uppercase
+                    //color: $blackColor
+                    //font-weight: 700
+                    //font-family: sans-serif
+                    //display: block
+                    //padding: 30px
+
+
+    input:checked ~ nav
+        height: 356px
+        transition-delay: 0s
+        > ul
+            > li
+                opacity: 1
+                transition-delay: .5s
+
+
+
+
+
