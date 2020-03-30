@@ -11,6 +11,14 @@
 <body>
 <header class="header">
     <div class="container">
+<!--        <div class="dropdown">-->
+        <input type="checkbox" id="dropdown-menu" />
+        <label for="dropdown-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+<!--        </div>-->
         <nav class="main-menu center">
             <ul class="menu-wrapper row small-menu">
                 <li class="menu__item"><a href="" class="menu__item-link">Аксессуары</a></li>
@@ -21,15 +29,15 @@
             </ul>
         </nav>
         <div class="subheader row">
-            <div class="subheader__logo-wrapper row">
+            <div class="subheader__item subheader__logo-wrapper row">
                 <img src="img/header/logo.png" alt="" class="subheader__logo" width="160" height="65">
                 <span class="subheader__description small-menu">Официальный дистрибьютор Panda Robotics Inc. iPlus Robotics Inc.</span>
             </div>
-            <div class="subheader__logo-payment">
+            <div class="subheader__item subheader__logo-payment">
                 <img src="img/header/visa.png" alt="" class="payment-visa-icon">
                 <img src="img/header/mastercard.png" alt="" class="payment-mastercard-icon">
             </div>
-            <div class="subheader__contact column">
+            <div class="subheader__item subheader__contact column">
                 <a href="tel:8 (800) 551-87-74" class="contact__phone-link">8 (800) 551-87-74</a>
                 <span class="contact__phone-title small-menu">сделать заказ/консультация</span>
                 <a href="tel: 8 (495) 128-07-04" class="contact__phone-link">8 (495) 128-07-04</a>
@@ -44,7 +52,10 @@
     </section>
     <div class="container">
         <section class="about">
-            <div class="about-wrapper row">
+            <div class="about__wrapper row_reverse center">
+                <div class="about__image-wrapper">
+                    <img src="img/about/image1.jpg" alt="" class="about__description-image">
+                </div>
                 <div class="about__description-wrapper row small">
                 <span class="about__description-item">
                     Новейшая разработка производителя бытовой техники Panda Robots ink. из Японии - робот-пылесос Cleverpanda i7.
@@ -56,11 +67,8 @@
                         <b>Продвинутое мобильное приложение.</b> Пылесос подключается к WI-FI и синхронизируется с телефоном. Вы можете запускать и останавливать работу, посмотреть карты и следить за уборкой с экрана телефона из любой точки мира.
                 </span>
                 </div>
-                <div class="about__image-wrapper">
-                    <img src="img/about/image1.jpg" alt="" class="about__description-image">
-                </div>
             </div>
-            <div class="about-wrapper row">
+            <div class="about__wrapper row center">
                 <div class="about__image-wrapper about__image_left">
                     <img src="img/about/image2.png" alt="" class="about__description-image">
                 </div>
@@ -72,14 +80,22 @@
 <b>Бесшумная работа.</b> Разработчики сделали Cleverpanda i7 тихим, уровень шума составляет 45 дБ, примерно также шумят холодильники с технологией No Frost во время работы.                 </span>
                     <span class="about__description-item">
                         <b>Тройная система фильтрации и очистка воздуха в доме.</b> Робот-пылесос убирает грязь, пыль и мусор, делает влажную уборку и очищает воздух от аллергенов, пыли и вредных веществ.                 </span>
-                    <div class="about__complect-wrapper">
-                        <div class="about__complect-text row">
+
+                    <div class="about__complect-wrapper row_reverse">
+                        <div class="about__complect-icon-wrapper">
+                            <img src="img/about/image3.svg" alt="" class="about__complect-icon">
+                        </div>
+                        <div class="about__complect-text">
+
                             <span class="about__complect-title">Комплект для влажной уборки в подарок</span>
                             <span class="about__complect-description">(бак с электронной регулировкой подачи воды + 2 салфетки из микрофибры) </span>
                             <span class="about__complect-date">до 13.11.2019!</span>
+
                         </div>
+
                     </div>
                 </div>
+
             </div>
         </section>
     </div>

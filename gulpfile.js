@@ -14,14 +14,14 @@ const watch = require('gulp-watch');
 
 //Пути файлов SASS
 const sassFiles = [
-    './src/sass/*.sass'
+    './src/sass/main.sass'
     // './src/sass/media.sass'
 ]
 //Пути файлов CSS
-const cssFiles = [
-    './src/css/*.css',
-    './src/css/media.css'
-];
+// const cssFiles = [
+//     './src/css/*.css',
+//     './src/css/media.css'
+// ];
 //Пути файлов JS
 const jsFiles = [
     './src/js/*.js'
@@ -110,7 +110,7 @@ function watchs() {
         }
     });
     //Следить за CSS файлами
-    gulp.watch('./src/css/**/*.css', styles);
+    // gulp.watch('./src/css/**/*.css', styles);
     //Следить за JS файлами
     gulp.watch('./src/css/**/*.js', scripts);
     //Watch for changes html files
