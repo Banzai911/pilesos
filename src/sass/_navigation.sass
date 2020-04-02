@@ -1,0 +1,86 @@
+.navigation__about-wrapper
+    margin: 0 20px 0 20px
+.navigation__title
+    margin-left: 10px
+
+.navigation__items-wrapper
+    margin-top: 75px
+
+.navigation__item
+    width: 255px
+    display: flex
+    flex-flow: wrap column
+    align-items: center
+
+.navigation__icon
+    width: 127px
+    height: 127px
+
+.navigation__item-description
+    margin-top: 30px
+
+.navigation__description-wrapper
+    border: 2px solid #FF7F08
+    box-sizing: border-box
+    padding: 30px
+
+.navigation__about-image
+    height: 100%
+    margin-top: 40px
+    margin-right: 50px
+    @include responsive(phone)
+        width: 260px
+
+.navigation__about-description-wrapper
+    margin-top: 40px
+    width: 585px
+
+.navigation__about-description
+    &:not(:first-child)
+        padding-top: 10px
+
+.navigation__about-button-wrapper
+    width: 100%
+    display: flex
+    justify-content: center
+.navigation__about-button
+    font-family: Montserrat, sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: 30px
+    line-height: 37px
+    color: #FF7F08
+.navigation__about-items-wrapper
+    width: 100%
+    @include responsive(tablet)
+        width: 74%
+.navigation__about-item
+    display: flex
+    flex-flow: column
+    align-items: center
+    justify-content: flex-start
+    width: 240px
+    height: 255px
+    margin: 55px 20px 20px 20px
+    padding: 15px 10px 5px 10px
+    background: #E8F2F4
+
+    &:not(:last-child):before
+        content: ""
+        width: 108px
+        height: 25px
+        position: relative
+        left: 140px
+        background: url("/img/navigation/arrow.svg")
+        @include responsive(phone)
+            display: none
+    &:last-child
+        padding-top: 50px
+    @include responsive(desktop)
+        width: 225px
+        margin: 55px 10px 20px 10px
+        padding: 15px 0 5px 0
+
+.navigation__about-icon
+    width: 124px
+    height: 124px

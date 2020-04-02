@@ -7,6 +7,13 @@
 .container
     max-width: 1200px
     margin: auto
+    @include responsive(desktop_big)
+        max-width: 1400px
+    @include responsive(desktop)
+        max-width: 1024px
+    @include responsive(tablet)
+        max-width: 1000px
+
 
 
 .center
@@ -16,6 +23,7 @@
 .row
     display: flex
     flex-flow: wrap row
+
 
 .row_reverse
     display: flex

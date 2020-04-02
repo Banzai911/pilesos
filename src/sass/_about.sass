@@ -2,11 +2,9 @@
 .about
     margin: auto
 
-
 .about__description-wrapper
     width: 670px
     align-content: flex-end
-
     @include responsive(desktop)
         width: 50%
     @include responsive(tablet)
@@ -27,7 +25,6 @@
     display: flex
     justify-content: center
 
-
     &::before
         content: ""
         position: absolute
@@ -37,7 +34,6 @@
         background: #F4F4F4
         border-radius: 700px
         z-index: -1
-
         @include responsive(desktop)
             left: 20%
             width: 78%
@@ -46,17 +42,18 @@
             width: 100%
 
 .about__complect-text
-    width: 500px
+    width: 470px
     height: 210px
     padding-top: 10px
     z-index: 1
+    @include responsive(desktop_big)
+        width: 437px
     @include responsive(desktop)
-        width: 340px
+        width: 334px
     @include responsive(tablet)
         width: 340px
     @include responsive(phone)
-        width: 320px
-
+        width: 300px
 
 .about__complect-title
     display: flex
@@ -67,9 +64,14 @@
     line-height: 40px
     text-transform: uppercase
     color: #FF7F08
+    @include responsive(phone)
+        font-size: 117.33%
+    @include responsive(tablet)
+        font-size: 117.33%
     @include responsive(desktop)
         font-size: 133.33%
-//10px = 1rem; 10/30*100%=33.33%
+
+//10px = 1rem 10/30*100%=33.33%
 
 .about__complect-description
     display: flex
@@ -79,10 +81,17 @@
     font-size: 20px
     line-height: 30px
     color: #000000
+    @include responsive(phone)
+        font-size: 12px
+    @include responsive(tablet)
+        font-size: 14px
     @include responsive(desktop)
         font-size: 17px
-
+//.about__complect-icon
+//    @include responsive(desktop)
+//        width: 70%
 .about__complect-date
+    display: flex
     padding-top: 30px
     font-family: Montserrat, sans-serif
     font-style: normal
@@ -90,3 +99,22 @@
     font-size: 20px
     line-height: 55px
     color: #9F9F9F
+    @include responsive(desktop)
+        padding-top: 0
+    @include responsive(desktop_big)
+        padding-top: 0
+
+
+.about__complect-button-wrapper
+    position: relative
+    right: 25%
+    padding-top: 25px
+
+.about__complect-button
+    font-family: Montserrat, sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: 20px
+    line-height: 37px
+    color: #FF7F08
+    text-transform: uppercase

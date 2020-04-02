@@ -97,6 +97,7 @@ $blackColor: #black
     display: none
     @include responsive(tablet)
         display: block
+
 @include responsive(tablet)
 
     input + label
@@ -106,8 +107,7 @@ $blackColor: #black
         width: 15px
         height: 20px
         z-index: 5
-        //@include responsive(phone)
-        //    z-index: 5
+
         span
 
             position: absolute
@@ -120,10 +120,10 @@ $blackColor: #black
             transition: .5s
 
         span:first-child
-                top: 3px
+            top: 3px
 
         span:last-child
-                top: 16px
+            top: 16px
 
     label:hover
         cursor: pointer
@@ -161,20 +161,10 @@ $blackColor: #black
                 opacity: 0
                 transition: .5s
                 transition-delay: 0s
-
-                > a
-                    //text-decoration: none
-                    //text-transform: uppercase
-                    //color: $blackColor
-                    //font-weight: 700
-                    //font-family: sans-serif
-                    //display: block
-                    //padding: 30px
-
-
     input:checked ~ nav
         height: 356px
         transition-delay: 0s
+
         > ul
             > li
                 opacity: 1

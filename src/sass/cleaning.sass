@@ -1,0 +1,112 @@
+.cleaning__title
+    margin-left: 10px
+
+.cleaning__wrapper
+    width: 99%
+    height: 430px
+    margin: 0 10px 0 5px
+    background: top 50% left 49% url("/img/cleaning/image1.jpg") no-repeat
+    @include responsive(desktop)
+        background-position: top 50% left 47%
+    @include responsive(tablet)
+        background-position: top 50% left 47%
+    @include responsive(phone_land)
+        background: none
+        height: 100%
+
+.cleaning__left-wrapper
+    width: 50%
+    display: flex
+    align-items: flex-start
+    flex-flow: wrap column
+    border: 1px solid #144BB6
+    border-right: none
+    box-sizing: border-box
+    padding-left: 30px
+    margin-top: 15px
+
+    &:after
+        content: ""
+        position: relative
+        height: 100%
+        border: 0.5px #144BB6 solid
+        display: block
+        align-self: flex-end
+        z-index: -1
+        @include responsive(phone_land)
+            display: none
+
+.cleaning__left-item
+    padding-left: 20px
+    margin-left: 20px
+    list-style-image: url("/img/cleaning/icon1.svg")
+    list-style-position: outside
+    width: 340px
+    line-height: 25px
+    text-align: left
+
+    &:first-child
+        padding-top: 30px
+
+.cleaning__left-title
+    color: #144BB6
+    text-transform: uppercase
+    font-weight: 600
+    line-height: 22px
+    margin-top: 30px
+
+.cleaning__right-wrapper
+    width: 49%
+    display: flex
+    align-items: flex-end
+    flex-flow: wrap column
+    border: 1px solid #BBBBBB
+    border-left: none
+    box-sizing: border-box
+    margin-left: 0.5rem
+    margin-top: 15px
+    @include responsive(phone_land)
+        width: 50%
+
+    &:before
+        content: ""
+        position: relative
+        height: 100%
+        border: 0.5px #BBBBBB solid
+        display: block
+        align-self: self-start
+        z-index: -1
+        @include responsive(phone_land)
+            display: none
+
+
+
+.cleaning__right-title
+    font-weight: 600
+    line-height: 22px
+    margin: 30px 25px 0 0
+
+.cleaning__right-item
+    list-style: none
+    text-align: right
+    margin-right: 40px
+
+    &:first-child
+        padding-top: 30px
+
+    &:after
+        content: url("/img/cleaning/icon2.svg")
+        padding-left: 15px
+
+
+.cleaning__button
+    display: flex
+    justify-content: center
+    margin-top: 16px
+
+    width: 100%
+    height: 70px
+    background: #015DBA
+    color: #FFFFFF
+    text-transform: uppercase
+

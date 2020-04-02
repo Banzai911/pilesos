@@ -1,16 +1,32 @@
-//+6px for correct responsive in Firefox
-
 @mixin responsive($breakpoint)
     @if $breakpoint == phone
-        @media only screen and (max-width: 767px)
+        @media only screen and (max-width: 600px)
+            @content
+    @if $breakpoint == phone_land
+        @media only screen and (max-width: 900px)
             @content
     @if $breakpoint == tablet
-        @media only screen and (max-width: 1023px)
+        @media only screen and (max-width: 1024px)
             @content
-
     @if $breakpoint == desktop
-        @media screen and (max-width: 1366px)
+        @media screen and (max-width: 1200px)
             @content
     @if $breakpoint == desktop_big
-        @media screen and (min-width: 1367px)
+        @media screen and (min-width: 1600px)
             @content
+
+
+//@mixin responsive($breakpoint)
+//    @if $breakpoint == phone
+//        @media only screen and (max-width: 767px)
+//            @content
+//    @if $breakpoint == tablet
+//        @media only screen and (max-width: 1023px)
+//            @content
+//
+//    @if $breakpoint == desktop
+//        @media screen and (max-width: 1366px)
+//            @content
+//    @if $breakpoint == desktop_big
+//        @media screen and (min-width: 1367px)
+//            @content
