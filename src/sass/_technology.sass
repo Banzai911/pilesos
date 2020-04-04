@@ -1,0 +1,103 @@
+.technology__title
+    margin-left: 10px
+
+.technology__items-wrapper
+    flex-wrap: wrap
+    width: 100%
+    justify-content: space-around
+
+.technology__item
+    display: flex
+    width: 500px
+    margin-top: 36px
+    margin-left: 5px
+
+    &:nth-child(11)
+        margin-top: 60px
+
+    &:nth-child(12)
+        z-index: 1
+
+.item-image
+    &:not(:last-child)
+        width: 202px
+        height: 202px
+        z-index: 1
+
+.item-description
+    display: flex
+    flex-direction: column
+
+.item-title
+    width: 280px
+    line-height: 22px
+    font-weight: 600
+    text-transform: uppercase
+    margin-left: 10px
+
+    &:before
+        content: ""
+        position: relative
+        display: flex
+        align-self: self-start
+        width: 300px
+        height: 3px
+        background: #FF7F08
+        margin-bottom: 25px
+        right: 40%
+        z-index: 0
+
+.item-description
+    width: 300px
+    text-align: left
+    margin-top: 14px
+    margin-bottom: 5px
+    margin-left: 10px
+
+.technology__description-wrapper
+    position: relative
+    top: -30px
+    border: 1px solid #CBCBCB
+    box-sizing: border-box
+    max-height: 300px
+    z-index: 0
+    align-items: center
+    @include responsive(tablet)
+        max-height: none
+
+.technology__description-images-wrapper
+    height: 300px
+    align-items: flex-end
+    justify-content: space-around
+
+.technology__description
+    width: 470px
+    height: 200px
+    text-align: left
+    margin: 30px 0 0 50px
+
+.technology__button-wrapper
+    margin-left: 50px
+
+.technology__description-button
+    font-family: Montserrat, sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: 30px
+    line-height: 37px
+    color: #FF7F08
+    background: #FFFFFF
+    border: none
+    text-transform: uppercase
+    cursor: pointer
+
+.technology__description-images
+    display: flex
+    flex-flow: wrap column
+    width: 165px
+
+.description-image-text
+    height: 83px
+    line-height: 22px
+    margin-bottom: 5px
+
