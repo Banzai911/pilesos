@@ -13,6 +13,8 @@
     @include responsive(phone_land)
         background: none
         height: 100%
+    @include responsive(phone)
+        justify-content: flex-start
 
 .cleaning__left-wrapper
     width: 50%
@@ -24,7 +26,8 @@
     box-sizing: border-box
     padding-left: 30px
     margin-top: 15px
-
+    @include responsive(phone)
+        width: 100%
     &:after
         content: ""
         position: relative
@@ -36,6 +39,7 @@
         @include responsive(phone_land)
             display: none
 
+
 .cleaning__left-item
     padding-left: 20px
     margin-left: 20px
@@ -44,6 +48,10 @@
     width: 340px
     line-height: 25px
     text-align: left
+    @include responsive(phone)
+        width: 280px
+        margin-left: 0
+        padding-left: 0
 
     &:first-child
         padding-top: 30px
@@ -65,8 +73,10 @@
     box-sizing: border-box
     margin-left: 0.5rem
     margin-top: 15px
-    @include responsive(phone_land)
-        width: 50%
+    @include responsive(phone)
+        width: 100%
+    //@include responsive(phone_land)
+    //    width: 50%
 
     &:before
         content: ""

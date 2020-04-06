@@ -8,7 +8,6 @@
 
 .technology__item
     display: flex
-    width: 500px
     margin-top: 36px
     margin-left: 5px
 
@@ -19,14 +18,15 @@
         z-index: 1
 
 .item-image
+    width: 500px
+
     &:not(:last-child)
         width: 202px
         height: 202px
         z-index: 1
 
-.item-description
-    display: flex
-    flex-direction: column
+    @include responsive(phone)
+        width: 300px
 
 .item-title
     width: 280px
@@ -48,11 +48,15 @@
         z-index: 0
 
 .item-description
+    display: flex
+    flex-direction: column
     width: 300px
     text-align: left
     margin-top: 14px
     margin-bottom: 5px
     margin-left: 10px
+    @include responsive(phone)
+        margin-left: 0
 
 .technology__description-wrapper
     position: relative
@@ -61,23 +65,39 @@
     box-sizing: border-box
     max-height: 300px
     z-index: 0
-    align-items: center
     @include responsive(tablet)
         max-height: none
+        align-items: center
+
+.technology__item
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
 
 .technology__description-images-wrapper
     height: 300px
     align-items: flex-end
     justify-content: space-around
+    @include responsive(phone)
+        height: auto
 
 .technology__description
     width: 470px
     height: 200px
     text-align: left
     margin: 30px 0 0 50px
+    @include responsive(phone)
+        width: 300px
+        height: auto
+        margin-left: 0
 
 .technology__button-wrapper
+    display: flex
+    justify-content: flex-start
     margin-left: 50px
+    align-items: center
+    @include responsive(phone)
+        margin-left: 0
 
 .technology__description-button
     font-family: Montserrat, sans-serif
@@ -90,6 +110,7 @@
     border: none
     text-transform: uppercase
     cursor: pointer
+    margin-left: 30px
 
 .technology__description-images
     display: flex

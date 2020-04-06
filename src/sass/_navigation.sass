@@ -1,5 +1,6 @@
 .navigation__about-wrapper
     margin: 0 20px 0 20px
+
 .navigation__title
     margin-left: 10px
 
@@ -43,6 +44,7 @@
     width: 100%
     display: flex
     justify-content: center
+
 .navigation__about-button
     font-family: Montserrat, sans-serif
     font-style: normal
@@ -50,10 +52,17 @@
     font-size: 30px
     line-height: 37px
     color: #FF7F08
+    background: #FFFFFF
+    border: none
+    text-transform: uppercase
+    margin-left: 30px
+    cursor: pointer
+
 .navigation__about-items-wrapper
     width: 100%
     @include responsive(tablet)
         width: 74%
+
 .navigation__about-item
     display: flex
     flex-flow: column
@@ -74,8 +83,10 @@
         background: url("/img/navigation/arrow.svg")
         @include responsive(phone)
             display: none
+
     &:last-child
         padding-top: 50px
+
     @include responsive(desktop)
         width: 225px
         margin: 55px 10px 20px 10px
